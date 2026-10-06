@@ -10,6 +10,11 @@
   --accent: #1F4D57;
   --accent-bright: #2E6B78;
   --on-accent: #F7F3EC;
+  /* The lash eye: ink lines on cream. On dark, the eye-white fills in and
+     the pupil stays dark, like a real eye (logo canvas, option 2). */
+  --eye-line: #211F1C;
+  --eye-white: none;
+  --eye-pupil: #211F1C;
   --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
   --sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   color-scheme: light;
@@ -25,6 +30,9 @@
     --accent: #4F98A3;
     --accent-bright: #6FB3BD;
     --on-accent: #121317;
+    --eye-line: #F1F0EC;
+    --eye-white: #F1F0EC;
+    --eye-pupil: #121317;
     color-scheme: dark;
   }
 }
@@ -63,7 +71,13 @@ img, svg { max-width: 100%; }
   font: italic 600 26px/1 var(--serif);
   letter-spacing: -0.01em;
 }
-.brand svg { width: 38px; height: 29px; color: var(--accent); flex: none; }
+.brand svg { width: 52px; height: 34px; flex: none; }
+
+.eye .eye-white { fill: var(--eye-white); stroke: var(--eye-line); stroke-width: 32; stroke-linejoin: round; }
+.eye .eye-pupil { fill: var(--eye-pupil); }
+.eye .eye-lashes { fill: none; stroke: var(--eye-line); stroke-width: 34; stroke-linecap: round; }
+.eye-bold .eye-white { stroke-width: 46; }
+.eye-bold .eye-lashes { stroke-width: 50; }
 .site-nav { display: flex; gap: 22px; font-size: 15px; }
 .site-nav a { color: var(--muted); text-decoration: none; }
 .site-nav a:hover, .site-nav a[aria-current='page'] { color: var(--text); }
@@ -103,7 +117,7 @@ img, svg { max-width: 100%; }
   display: grid;
   place-items: center;
 }
-.hero-mark svg { width: 72%; height: auto; color: var(--accent); }
+.hero-mark svg { width: 78%; height: auto; }
 
 .points {
   display: grid;
