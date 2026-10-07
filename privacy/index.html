@@ -55,7 +55,7 @@
           <tr>
             <td>Email address and password</td>
             <td>You create an account with email</td>
-            <td>Our sign-in provider. Your password is stored only in scrambled (hashed) form, so we never see it. We don&rsquo;t send a confirmation email or any marketing email.</td>
+            <td>Our sign-in provider. Your password is stored only in scrambled (hashed) form, so we never see it. We don&rsquo;t send a confirmation email or any marketing email. If you ask to reset your password, we email you a link to set a new one, from our mailbox.</td>
           </tr>
           <tr>
             <td>Your email address, name, profile picture link and Google&rsquo;s ID for you</td>
@@ -201,14 +201,14 @@
           <tr>
             <td>Google</td>
             <td>Sign in with Google, if you choose it. Google Workspace also hosts our email.</td>
-            <td>What you agree to share with Google, and the emails you send us and our replies</td>
+            <td>What you agree to share with Google, the emails you send us and our replies, and the password reset emails we send</td>
           </tr>
         </tbody>
       </table>
     </div>
     <p>Product information from Open Food Facts is available under the Open Database License (ODbL).</p>
     <p>Ingredient pages link to research and official sources. If you open one, that website sees your visit, and its own privacy policy applies.</p>
-    <p>Our website, knowsie.app, is hosted by GitHub Pages. GitHub logs visitors&rsquo; IP addresses for security. The website serves its own fonts, and it uses no cookies and no analytics.</p>
+    <p>Our website, knowsie.app, is hosted by GitHub Pages. GitHub logs visitors&rsquo; IP addresses for security. The website serves its own fonts, and it uses no cookies and no analytics. Its password reset page, which opens from the link in a reset email, loads Supabase&rsquo;s sign-in code from jsDelivr, a public service that delivers code to websites, so jsDelivr sees your IP address when you open that page. The new password you type there goes straight to Supabase, our sign-in provider, over an encrypted connection.</p>
 
     <h2 id="health-information">Health information</h2>
     <p>Allergies, typed allergens and nutrition goals can count as health information. Halal and kosher diets can reveal religious beliefs, and vegan or vegetarian diets can reveal other beliefs. We use them only to personalize the app: your warnings, the effect of your goals on your scores, and the alternatives we suggest. We never use them for advertising, and we never sell them.</p>
@@ -222,6 +222,7 @@
       <li>Products and problem reports you send in, with their photos: kept while we review them. Approved ones become part of our product database and stay there. Ones we reject are deleted, with their photos, 90 days after we reject them.</li>
       <li>Feedback: deleted 12 months after you send it.</li>
       <li>Emails you send us: kept in our mailbox while we need them to help you. Ask us and we&rsquo;ll delete yours.</li>
+      <li>Password reset emails: our mailbox keeps a copy of each one we send until we delete it. Ask us and we&rsquo;ll delete yours. The link in it works only once, for a limited time.</li>
       <li>Server request logs: 1 day on our current plan.</li>
       <li>Crash and error reports: 30 days.</li>
       <li>Subscription records: kept by RevenueCat until we delete them. Write to us and we&rsquo;ll have yours deleted.</li>
@@ -245,7 +246,7 @@
       <li>There&rsquo;s no way yet to delete single scan history entries in the app. Write to us and we&rsquo;ll do it.</li>
       <li>Ask us to see, correct, export or delete your data, or object to how we use it, by writing to <a href="mailto:privacy@knowsie.app">privacy@knowsie.app</a>. Depending on where you live (for example the EU, the UK or California), these may be legal rights. We&rsquo;ll answer within 30 days. In the EU and the UK, you can also complain to your data protection authority (in Poland, that&rsquo;s the UODO).</li>
       <li>We don&rsquo;t sell your personal information, and we don&rsquo;t share it for advertising, in the sense California law uses those words.</li>
-      <li>If you can&rsquo;t sign in, or you&rsquo;ve forgotten your password, write to <a href="mailto:support@knowsie.app">support@knowsie.app</a> from the email address you signed up with, and we&rsquo;ll help.</li>
+      <li>If you&rsquo;ve forgotten your password, tap &ldquo;Forgot password?&rdquo; on the app&rsquo;s log-in screen, and we&rsquo;ll email you a link to set a new one. If that doesn&rsquo;t work, or you can&rsquo;t sign in, write to <a href="mailto:support@knowsie.app">support@knowsie.app</a> from the email address you signed up with, and we&rsquo;ll help.</li>
     </ul>
 
     <h2 id="children-security-transfers">Children, security and international transfers</h2>
