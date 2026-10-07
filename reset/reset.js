@@ -62,6 +62,13 @@
     return;
   }
 
+  // A newer link opened in this same tab changes only the part after #,
+  // and browsers don't reload the page for that, so this page would keep
+  // showing the old link's state. Reload so the new link is read.
+  window.addEventListener('hashchange', function () {
+    window.location.reload();
+  });
+
   // The library comes from a CDN; if it didn't load, leave the address as
   // it is so a reload can try again with the same link.
   if (!window.supabase || typeof window.supabase.createClient !== 'function') {
