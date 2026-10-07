@@ -1,5 +1,6 @@
-/* Knowsie site — the app's own palette (src/theme/colors.ts) and type
-   (Fraunces for headlines, the system face for reading). */
+/* Knowsie site — the app's own light palette (src/theme/colors.ts) and
+   type (Fraunces for headlines, the system face for reading). Light only
+   (Malwina, 2026-10-07). */
 :root {
   --bg: #F7F3EC;
   --surface: #FFFFFF;
@@ -17,23 +18,6 @@
   --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
   --sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #121317;
-    --surface: #1C1D22;
-    --surface-alt: #24252B;
-    --border: #34363E;
-    --text: #F1F0EC;
-    --muted: #8F909A;
-    --accent: #4F98A3;
-    --accent-bright: #6FB3BD;
-    --on-accent: #121317;
-    --eye-line: #F1F0EC;
-    --eye-white: #F1F0EC;
-    --eye-pupil: #121317;
-    color-scheme: dark;
-  }
 }
 
 *, *::before, *::after { box-sizing: border-box; }
