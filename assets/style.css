@@ -166,6 +166,12 @@ img, svg { max-width: 100%; }
   background: var(--surface);
 }
 .contact-card strong { font-size: 19px; }
+.contact-card + .contact-card { margin-top: 12px; }
+.toc { margin: 24px 0 8px; padding: 16px 18px; border-radius: 12px; background: var(--surface-alt); font-size: 16px; }
+.doc .toc p { margin: 0 0 6px; }
+.doc .toc ul { margin: 0; }
+.doc .toc li + li { margin-top: 2px; }
+.doc .table-scroll:focus-visible { outline: 2px solid var(--accent-bright); outline-offset: 3px; }
 
 /* Footer */
 .site-footer {
