@@ -100,7 +100,14 @@ img, svg { max-width: 100%; }
   display: grid;
   place-items: center;
 }
-.hero-mark svg { width: 78%; height: auto; }
+/* Malwina's intro: two eyes, the left one winks once (about every 5 s). */
+.wink { position: relative; width: 84%; aspect-ratio: 844 / 300; }
+.wink svg { position: absolute; inset: 0; width: 100%; height: 100%; fill: var(--text); }
+.wink-closed { opacity: 0; animation: wink-closed 5s infinite; }
+.wink-open { animation: wink-open 5s infinite; }
+@keyframes wink-closed { 0%, 59.99% { opacity: 0; } 60%, 63.99% { opacity: 1; } 64%, 100% { opacity: 0; } }
+@keyframes wink-open { 0%, 59.99% { opacity: 1; } 60%, 63.99% { opacity: 0; } 64%, 100% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .wink-closed, .wink-open { animation: none; } }
 
 .points {
   display: grid;
