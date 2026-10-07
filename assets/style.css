@@ -10,8 +10,7 @@
   --accent: #1F4D57;
   --accent-bright: #2E6B78;
   --on-accent: #F7F3EC;
-  /* The lash eye: ink lines on cream. On dark, the eye-white fills in and
-     the pupil stays dark, like a real eye (logo canvas, option 2). */
+  /* The eye mark (see .eye below). */
   --eye-line: #211F1C;
   --eye-white: none;
   --eye-pupil: #211F1C;
@@ -73,11 +72,11 @@ img, svg { max-width: 100%; }
 }
 .brand svg { width: 52px; height: 34px; flex: none; }
 
-.eye .eye-white { fill: var(--eye-white); stroke: var(--eye-line); stroke-width: 32; stroke-linejoin: round; }
+/* Malvi's hand-drawn eye, traced: ink on cream; on dark the eye-white
+   fills in and the pupil stays dark. */
+.eye .eye-white { fill: var(--eye-white); stroke: var(--eye-white); stroke-width: 8; stroke-linejoin: round; }
+.eye .eye-ink { fill: var(--eye-line); }
 .eye .eye-pupil { fill: var(--eye-pupil); }
-.eye .eye-lashes { fill: none; stroke: var(--eye-line); stroke-width: 34; stroke-linecap: round; }
-.eye-bold .eye-white { stroke-width: 46; }
-.eye-bold .eye-lashes { stroke-width: 50; }
 .site-nav { display: flex; gap: 22px; font-size: 15px; }
 .site-nav a { color: var(--muted); text-decoration: none; }
 .site-nav a:hover, .site-nav a[aria-current='page'] { color: var(--text); }
