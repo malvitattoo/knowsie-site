@@ -24,9 +24,9 @@
 
   <main class="doc narrow">
     <h1>Privacy policy</h1>
-    <p class="meta">Last updated 7 October 2026</p>
+    <p class="meta">Last updated 8 October 2026</p>
 
-    <p>This policy describes the Knowsie app for iPhone, version 1.2.0, including the updates we deliver inside the app. Until a new version of the app renames it, your phone may still show its earlier name, Malvi.</p>
+    <p>This policy describes the Knowsie app for iPhone and Android, version 1.2.0, including the updates we deliver inside the app. Until a new version of the app renames it, your phone may still show its earlier name, Malvi.</p>
     <p>Knowsie (&ldquo;we&rdquo;) is an app that scans packaged food, reads the ingredients and rates them. This policy explains what we collect, why, who processes it, and the choices you have. We don&rsquo;t show ads, we don&rsquo;t track you across other companies&rsquo; apps or websites, and we don&rsquo;t sell your data.</p>
     <p>Knowsie is run by Malwina Stachurska, who is responsible for your data (the &ldquo;data controller&rdquo;). For anything about your data, write to <a href="mailto:privacy@knowsie.app">privacy@knowsie.app</a>.</p>
 
@@ -64,7 +64,7 @@
           </tr>
           <tr>
             <td>Your email address (or Apple&rsquo;s private relay address, if you hide yours) and Apple&rsquo;s ID for you</td>
-            <td>You sign in with Apple</td>
+            <td>You sign in with Apple (iPhone only)</td>
             <td>Our sign-in provider. Apple may offer to share your name, but we don&rsquo;t keep it. We may also keep a token from Apple that lets us ask Apple to end Knowsie&rsquo;s access when you delete your account. It&rsquo;s deleted with your account.</td>
           </tr>
           <tr>
@@ -118,8 +118,8 @@
             <td>Our crash reporting provider (Sentry). See <a href="#who-processes-it">&ldquo;Who processes it&rdquo;</a>.</td>
           </tr>
           <tr>
-            <td>Subscription details: an anonymous ID, or your account&rsquo;s random ID, and your purchases once there&rsquo;s something to buy</td>
-            <td>Each time you open the app</td>
+            <td>Subscription details (iPhone only for now): an anonymous ID, or your account&rsquo;s random ID, and your purchases once there&rsquo;s something to buy</td>
+            <td>Each time you open the app on iPhone</td>
             <td>Our subscription provider (RevenueCat). Knowsie doesn&rsquo;t sell anything yet.</td>
           </tr>
           <tr>
@@ -137,9 +137,9 @@
       <li>Your preferences, and how far you&rsquo;ve got in the app tour.</li>
       <li>Your sign-in, so you stay signed in until you sign out. It includes your email address, your account&rsquo;s random ID and, with Google sign-in, your name and profile picture link.</li>
       <li>Your light or dark mode choice.</li>
-      <li>A count of your first 5 scored scans. It&rsquo;s used once, to ask Apple to show its rating window (only if you installed Knowsie from the App Store). Apple handles any rating you give, and nothing about it is sent to us.</li>
-      <li>A copy of our ingredient database, and the photos you take in the app, in the app&rsquo;s temporary storage until iOS clears it.</li>
-      <li>Random IDs that our crash reporting, update and subscription providers keep for this installation.</li>
+      <li>A count of your first 5 scored scans. On iPhone, it&rsquo;s used once, to ask Apple to show its rating window (only if you installed Knowsie from the App Store). Apple handles any rating you give, and nothing about it is sent to us. On Android, the app doesn&rsquo;t ask for ratings.</li>
+      <li>A copy of our ingredient database, and the photos you take in the app, in the app&rsquo;s temporary storage until your phone clears it.</li>
+      <li>Random IDs that our crash reporting and update providers keep for this installation. On iPhone, also one for our subscription provider, and on Android, one for Google&rsquo;s barcode reader (see <a href="#who-processes-it">&ldquo;Who processes it&rdquo;</a>).</li>
     </ul>
 
     <h2 id="how-we-use-it">How we use it</h2>
@@ -185,7 +185,7 @@
           </tr>
           <tr>
             <td>RevenueCat</td>
-            <td>Will manage subscriptions. It already runs on iPhone from version 1.2.0, before anyone can buy anything.</td>
+            <td>Will manage subscriptions. It already runs on iPhone from version 1.2.0, before anyone can buy anything. It doesn&rsquo;t run on Android yet.</td>
             <td>An anonymous ID, or your account&rsquo;s random ID when you&rsquo;re signed in. Your device, operating system and app version, language, App Store country and IP address. Once subscriptions start, the purchases Apple confirms. Never your card details. Its servers are in the United States.</td>
           </tr>
           <tr>
@@ -195,13 +195,13 @@
           </tr>
           <tr>
             <td>Apple</td>
-            <td>Sign in with Apple, if you choose it. App Store payments once subscriptions start, and the rating window.</td>
+            <td>On iPhone only: Sign in with Apple, if you choose it. App Store payments once subscriptions start, and the rating window.</td>
             <td>What you agree to share with Apple. Apple handles payments, so we never see your card details.</td>
           </tr>
           <tr>
             <td>Google</td>
-            <td>Sign in with Google, if you choose it. Google Workspace also hosts our email.</td>
-            <td>What you agree to share with Google, the emails you send us and our replies, and the password reset emails we send</td>
+            <td>Sign in with Google, if you choose it. Google Workspace also hosts our email. On Android, the app reads barcodes with Google&rsquo;s ML Kit, which does the reading on your phone.</td>
+            <td>What you agree to share with Google, the emails you send us and our replies, and the password reset emails we send. On Android, ML Kit sends Google usage data for diagnostics and analytics: device model and operating system, app version, a random installation ID, and performance and error details. It doesn&rsquo;t send the barcodes it reads or your photos, and it isn&rsquo;t linked to your account.</td>
           </tr>
         </tbody>
       </table>
@@ -216,7 +216,7 @@
 
     <h2 id="how-long-we-keep-it">How long we keep it</h2>
     <ul>
-      <li>Account, preferences and scan history: until you delete your account. Deleting it removes all three from our servers right away. Our current database plan doesn&rsquo;t include backups, so we don&rsquo;t keep a backup copy.</li>
+      <li>Account, preferences and scan history: until you delete your account. Deleting it in the app removes all three from our servers right away. If you ask us by email instead, we delete them within 7 days. Our current database plan doesn&rsquo;t include backups, so we don&rsquo;t keep a backup copy.</li>
       <li>Sign-in records (IP address and device type): until you sign out on that device or delete your account. Deleting the app without signing out doesn&rsquo;t end them.</li>
       <li>Preferences on your phone: if you&rsquo;re not signed in, until you clear them or delete the app. If you&rsquo;re signed in, until you sign out or delete your account in the app. If your sign-in ends some other way, for example because you deleted your account on another phone, they stay on that phone until you sign out there or delete the app.</li>
       <li>Products and problem reports you send in, with their photos: kept while we review them. Approved ones become part of our product database and stay there. Ones we reject are deleted, with their photos, 90 days after we reject them.</li>
@@ -225,7 +225,7 @@
       <li>Password reset emails: our mailbox keeps a copy of each one we send until we delete it. Ask us and we&rsquo;ll delete yours. The link in it works only once, for a limited time.</li>
       <li>Server request logs: 1 day on our current plan.</li>
       <li>Crash and error reports: 30 days.</li>
-      <li>Subscription records: kept by RevenueCat until we delete them. Write to us and we&rsquo;ll have yours deleted.</li>
+      <li>Subscription records (iPhone only): kept by RevenueCat until we delete them. Write to us and we&rsquo;ll have yours deleted.</li>
       <li>Update checks: handled by Expo under <a href="https://expo.dev/privacy">its own privacy policy</a>. They don&rsquo;t include your account.</li>
       <li>Label photos read by Anthropic: deleted by Anthropic within 30 days, except in the cases described under <a href="#who-processes-it">&ldquo;Who processes it&rdquo;</a>.</li>
     </ul>
@@ -238,11 +238,12 @@
       <li>Delete your account in Profile &rarr; Account settings &rarr; Delete account. It takes effect right away. Products, reports and feedback you sent stay (until the times listed above), but the link to your account is removed. A few things don&rsquo;t go away on their own yet. Write to <a href="mailto:privacy@knowsie.app">privacy@knowsie.app</a> and we&rsquo;ll remove them:
         <ul>
           <li>Our photo storage still notes which account uploaded each photo.</li>
-          <li>RevenueCat keeps its record of your account&rsquo;s random ID.</li>
+          <li>If you used Knowsie on iPhone, RevenueCat keeps its record of your account&rsquo;s random ID.</li>
         </ul>
       </li>
+      <li>No longer have the app? Email <a href="mailto:privacy@knowsie.app">privacy@knowsie.app</a> from your account&rsquo;s email address, and we&rsquo;ll delete your account within 7 days. See <a href="/delete-account/">Delete your Knowsie account</a> for the steps, and what we delete and what stays.</li>
       <li>Copies of your preferences on your other phones stay until you sign out there or delete the app.</li>
-      <li>If you signed in with Apple, check that Knowsie no longer has access: on your iPhone, open Settings, tap your name, then tap Sign in with Apple (on some versions of iOS, it&rsquo;s under Sign-In &amp; Security). If Knowsie, or Malvi, its earlier name, is still listed, choose it and tap Delete. You can also check at <a href="https://account.apple.com">account.apple.com</a>, under Sign-In &amp; Security &rarr; Sign in with Apple.</li>
+      <li>If you signed in with Apple, the app can also ask Apple to end Knowsie&rsquo;s access when you delete your account. Check that it&rsquo;s gone: on your iPhone, open Settings, tap your name, then tap Sign in with Apple (on some versions of iOS, it&rsquo;s under Sign-In &amp; Security). If Knowsie, or Malvi, its earlier name, is still listed, choose it and tap Delete. You can also check at <a href="https://account.apple.com">account.apple.com</a>, under Sign-In &amp; Security &rarr; Sign in with Apple.</li>
       <li>There&rsquo;s no way yet to delete single scan history entries in the app. Write to us and we&rsquo;ll do it.</li>
       <li>Ask us to see, correct, export or delete your data, or object to how we use it, by writing to <a href="mailto:privacy@knowsie.app">privacy@knowsie.app</a>. Depending on where you live (for example the EU, the UK or California), these may be legal rights. We&rsquo;ll answer within 30 days. In the EU and the UK, you can also complain to your data protection authority (in Poland, that&rsquo;s the UODO).</li>
       <li>We don&rsquo;t sell your personal information, and we don&rsquo;t share it for advertising, in the sense California law uses those words.</li>
@@ -267,6 +268,7 @@
     <nav aria-label="Footer">
       <a href="/support/">Support</a>
       <a href="/privacy/">Privacy policy</a>
+      <a href="/delete-account/">Delete account</a>
     </nav>
   </footer>
 </div>

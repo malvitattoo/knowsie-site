@@ -3,19 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Knowsie Password Reset</title>
-<meta name="description" content="Set a new password for your Knowsie account.">
-<meta name="robots" content="noindex, nofollow">
-<meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.3/dist/umd/supabase.js; connect-src https://jxmurbnwauluwgopzulk.supabase.co; style-src 'self'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Delete your Knowsie account</title>
+<meta name="description" content="How to delete your Knowsie account in the app, or by email without the app, and what we delete and what we keep.">
 <meta name="theme-color" content="#F7F3EC">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/style.css">
-<!-- The sign-in library that talks to Supabase, our sign-in provider: an
-     exact version, and the integrity hash makes the browser refuse the file
-     if it ever differs from the one we checked. -->
-<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.3/dist/umd/supabase.js" integrity="sha384-qafw21c/iciq0VXsi9FzkfoQv5I/V0iqE4lSNcKXPnW9/UTJLnv5CcN4FHxVLnKg" crossorigin="anonymous"></script>
-<script defer src="/reset/reset.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -31,55 +23,60 @@
   </header>
 
   <main class="doc narrow">
-    <h1>Reset your password</h1>
+    <h1>Delete your Knowsie account</h1>
+    <p class="meta">Last updated 8 October 2026</p>
 
-    <noscript>
-      <p class="callout">This page needs JavaScript to change your password. Turn it on, then open the link in the email again. Or write to <a href="mailto:support@knowsie.app">support@knowsie.app</a> and we&rsquo;ll help.</p>
-    </noscript>
+    <p>Knowsie is a food-scanning app for iPhone and Android, run by Malwina Stachurska. You can delete your Knowsie account, and the data linked to it, in two ways. You don&rsquo;t need the app for the second one.</p>
 
-    <section id="state-loading" aria-live="polite">
-      <p>Opening your link&hellip;</p>
-    </section>
+    <h2 id="in-the-app">In the app (fastest)</h2>
+    <ol>
+      <li>Open Knowsie and sign in.</li>
+      <li>Go to Profile &rarr; Account settings &rarr; Delete account.</li>
+      <li>Confirm. Your account is deleted right away, and this can&rsquo;t be undone.</li>
+    </ol>
+    <p>This also signs you out and clears your preferences from that phone. If you signed in with Apple, the app can also ask Apple to end Knowsie&rsquo;s access. Check that it&rsquo;s gone, as described <a href="#apple">below</a>.</p>
 
-    <section id="state-form" hidden>
-      <p>Choose a new password for your Knowsie account.</p>
-      <form id="reset-form" novalidate>
-        <div class="form-field">
-          <label for="new-password">New password</label>
-          <input id="new-password" name="new-password" type="password" autocomplete="new-password" minlength="8" required aria-describedby="password-rule">
-          <p id="password-rule" class="form-hint">At least 8 characters.</p>
-        </div>
-        <div class="form-field">
-          <label for="repeat-password">Repeat new password</label>
-          <input id="repeat-password" name="repeat-password" type="password" autocomplete="new-password" minlength="8" required>
-        </div>
-        <label class="form-check"><input id="show-passwords" type="checkbox"> Show passwords</label>
-        <p id="form-error" class="form-error" role="alert" hidden></p>
-        <button id="submit-button" class="button" type="submit">Change password</button>
-      </form>
-    </section>
+    <h2 id="by-email">Without the app</h2>
+    <p>Email us from the email address you use for Knowsie, with the subject &ldquo;Delete my account&rdquo;. You don&rsquo;t need to install the app again.</p>
+    <div class="contact-card"><strong><a href="mailto:privacy@knowsie.app?subject=Delete%20my%20account">privacy@knowsie.app</a></strong><span>Subject: Delete my account</span></div>
+    <p>We&rsquo;ll check that the account is yours, delete it within 7 days of your email, and reply when it&rsquo;s done. We delete the same things as the app does. If you signed in with Apple and chose to hide your email address, say so, and we&rsquo;ll find another way to confirm it&rsquo;s you. If we need to ask you something, the 7 days start when you answer.</p>
 
-    <section id="state-done" hidden>
-      <p class="callout" role="status"><strong>Your password has been changed.</strong></p>
-      <p>Go back to the Knowsie app and log in with your email and your new password. You can close this page.</p>
-    </section>
+    <h2 id="what-we-delete">What we delete</h2>
+    <ul>
+      <li>Your account: your email address, your sign-in details and, if you signed in with Google, the name and profile picture link Google passed on to us.</li>
+      <li>Your sign-in records: the IP address and device type of each sign-in.</li>
+      <li>The preferences saved in your account: allergies, allergens you typed in, diets, nutrition goals and watch list.</li>
+      <li>Your scan history.</li>
+      <li>The link between your account and the products, problem reports and feedback you sent us.</li>
+    </ul>
 
-    <section id="state-expired" hidden>
-      <p class="callout" role="alert">This link has expired or has already been used.</p>
-      <p>Each link works once, and only for a limited time. To get a new one, open the Knowsie app, go to Profile and tap Sign in, then tap &ldquo;Forgot password?&rdquo;.</p>
-    </section>
+    <h2 id="what-stays">What stays</h2>
+    <p>These stay after your account is deleted, but they&rsquo;re no longer linked to it:</p>
+    <ul>
+      <li>Products, photos and problem reports you sent in. Approved ones, or the corrections they lead to, become part of our product database, which everyone using Knowsie can see. Ones we reject are deleted 90 days after we reject them.</li>
+      <li>Feedback messages. They&rsquo;re deleted 12 months after you sent them.</li>
+    </ul>
+    <p>These delete themselves soon after:</p>
+    <ul>
+      <li>Server request logs, after 1 day. They can show which account made a request.</li>
+      <li>Crash and error reports, after 30 days. They never include your name or email.</li>
+    </ul>
+    <h3 id="when-you-ask">Removed when you ask</h3>
+    <p>A few records don&rsquo;t go away on their own yet. Ask in your email, or write to <a href="mailto:privacy@knowsie.app">privacy@knowsie.app</a> after deleting your account in the app, and we&rsquo;ll remove them:</p>
+    <ul>
+      <li>Our photo storage still notes the random ID of the account that uploaded each photo.</li>
+      <li>If you used Knowsie on iPhone, our subscription provider (RevenueCat) still has your account&rsquo;s random ID.</li>
+      <li>Emails between you and us, including any password reset emails we sent you.</li>
+    </ul>
 
-    <section id="state-no-link" hidden>
-      <p>This page sets a new password for your Knowsie account, from the link in our password reset email.</p>
-      <p>To get that email, open the Knowsie app, go to Profile and tap Sign in, then tap &ldquo;Forgot password?&rdquo;.</p>
-    </section>
+    <h2 id="on-your-phone">On your phone</h2>
+    <p>Deleting the app doesn&rsquo;t delete your account. If your account is deleted by email, or on another phone, your preferences stay on each phone until you sign out or delete the app there.</p>
 
-    <section id="state-unavailable" hidden>
-      <p class="callout" role="alert">This page couldn&rsquo;t load everything it needs.</p>
-      <p>Check your connection, then reload this page. Your link still works.</p>
-    </section>
+    <h2 id="apple">If you signed in with Apple</h2>
+    <p>Check that Knowsie no longer has access to your Apple account. On your iPhone, open Settings, tap your name, then tap Sign in with Apple (on some versions of iOS, it&rsquo;s under Sign-In &amp; Security). If Knowsie, or Malvi, its earlier name, is still listed, choose it and tap Delete. You can also check at <a href="https://account.apple.com">account.apple.com</a>, under Sign-In &amp; Security &rarr; Sign in with Apple.</p>
 
-    <p class="form-help">Need help? Write to <a href="mailto:support@knowsie.app">support@knowsie.app</a>.</p>
+    <h2 id="questions">Questions</h2>
+    <p>Write to <a href="mailto:privacy@knowsie.app">privacy@knowsie.app</a>. You&rsquo;ll find the full details in our <a href="/privacy/#how-long-we-keep-it">privacy policy</a>.</p>
   </main>
 
   <footer class="site-footer">

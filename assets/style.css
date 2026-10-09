@@ -144,7 +144,7 @@ img, svg { max-width: 100%; }
 .points h2 { margin: 0 0 6px; font: italic 600 22px/1.25 var(--serif); }
 .points p { margin: 0; color: var(--muted); font-size: 16px; }
 
-/* Text pages (privacy, support) */
+/* Text pages (privacy, support, delete-account) */
 .doc { padding-block: 32px 72px; }
 .doc h1 { margin: 0 0 6px; font: 600 clamp(34px, 5vw, 46px)/1.1 var(--serif); letter-spacing: -0.015em; text-wrap: balance; }
 .doc .meta { margin: 0 0 32px; color: var(--muted); font-size: 15px; }
@@ -152,6 +152,7 @@ img, svg { max-width: 100%; }
 .doc h3 { margin: 26px 0 6px; font-size: 17px; }
 .doc p, .doc li { max-width: 65ch; }
 .doc ul { padding-left: 22px; }
+.doc ol { padding-left: 24px; }
 .doc li + li { margin-top: 6px; }
 .table-scroll { overflow-x: auto; margin: 16px 0; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
 .doc table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 15px; }
