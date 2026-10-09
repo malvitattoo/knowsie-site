@@ -121,7 +121,9 @@ img, svg { max-width: 100%; }
   aspect-ratio: 1;
   max-width: 100%;
   border-radius: 28px;
-  background: var(--surface-alt);
+  /* Same ground as the page, so the eyes sit on it rather than in a tile
+     (Malwina, 2026-10-08). */
+  background: var(--bg);
   display: grid;
   place-items: center;
 }
