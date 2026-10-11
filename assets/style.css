@@ -117,6 +117,12 @@ img, svg { max-width: 100%; }
   font-size: 15px;
 }
 .status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-bright); flex: none; }
+/* Testers sign up by email for now: Google Play needs 12 people in a closed
+   test for 14 days, and the stores link here (2026-10-10). */
+.tester { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin: 24px 0 0; }
+.tester span { color: var(--muted); font-size: 15px; max-width: 24em; }
+a.button { display: inline-flex; align-items: center; text-decoration: none; }
+a.button:hover { color: var(--on-accent); }
 .hero-mark {
   aspect-ratio: 1;
   max-width: 100%;
