@@ -26,7 +26,7 @@
 
   <main class="doc narrow">
     <h1>How Knowsie scores food</h1>
-    <p class="meta">Last updated 11 October 2026</p>
+    <p class="meta">Last updated 12 October 2026</p>
 
     <p>No mystery numbers here. A score is only useful if you can see where it comes from, so this page lays out how Knowsie scores food, with the exact points. In the app, each product&rsquo;s score breakdown shows what took points off, and you can tap any rated ingredient to see why it&rsquo;s there. The base score is the same for everyone, and brands can&rsquo;t pay for a better one. Ever.</p>
 
@@ -53,11 +53,10 @@
           <tr><th scope="col">What</th><th scope="col">Points</th><th scope="col">Most in total</th></tr>
         </thead>
         <tbody>
-          <tr><td>Each level 3 (processed) ingredient</td><td class="num">&minus;0.5</td><td rowspan="3">&minus;35 for these three together</td></tr>
+          <tr><td>Each level 3 (processed) ingredient</td><td class="num">&minus;0.5</td><td rowspan="2">&minus;35 for these two together</td></tr>
           <tr><td>Each level 4 (ultra-processed) ingredient</td><td class="num">&minus;1.5</td></tr>
-          <tr><td>Each rated ingredient that&rsquo;s typical of ultra-processed food</td><td class="num">&minus;2</td></tr>
           <tr><td>The product as a whole is processed (NOVA 3)</td><td class="num">&minus;5</td><td rowspan="2">One or the other</td></tr>
-          <tr><td>The product as a whole is ultra-processed (NOVA 4)</td><td class="num">&minus;10</td></tr>
+          <tr><td>The product as a whole is ultra-processed (NOVA 4)</td><td class="num">&minus;14</td></tr>
           <tr><td>Each Low concern ingredient</td><td class="num">&minus;2</td><td rowspan="4">&minus;40 for all rated ingredients together</td></tr>
           <tr><td>Each Some concern ingredient</td><td class="num">&minus;5</td></tr>
           <tr><td>Each Moderate concern ingredient</td><td class="num">&minus;8</td></tr>
@@ -78,8 +77,8 @@
       <li><strong>Level 3:</strong> processed, like refined sunflower oil or skimmed milk powder.</li>
       <li><strong>Level 4:</strong> ultra-processed, like flavors, maltodextrin or whey protein isolate.</li>
     </ul>
-    <p>Levels 1 and 2 cost nothing. Each level 3 ingredient costs 0.5 points and each level 4 ingredient 1.5. Some rated ingredients are also typical of ultra-processed food (most rated additives are), and each of those costs a further 2 points. All of this together can cost up to 35 points.</p>
-    <p>Frying, extruding and recombining don&rsquo;t show up in an ingredient list, so we also look at the product as a whole. For that we use its NOVA group, a widely used system that sorts food into four groups by how processed it is. A processed product (NOVA 3) loses 5 points and an ultra-processed one (NOVA 4) loses 10. The NOVA group comes from Open Food Facts. For a product our team has added or corrected, the team sets it, and for one you&rsquo;ve just photographed, the app works it out from the ingredients. If we don&rsquo;t know a product&rsquo;s NOVA group, nothing comes off.</p>
+    <p>Levels 1 and 2 cost nothing. Each level 3 ingredient costs 0.5 points and each level 4 ingredient 1.5. All of this together can cost up to 35 points.</p>
+    <p>Frying, extruding and recombining don&rsquo;t show up in an ingredient list, so we also look at the product as a whole. For that we use its NOVA group, a widely used system that sorts food into four groups by how processed it is. A processed product (NOVA 3) loses 5 points and an ultra-processed one (NOVA 4) loses 14. The NOVA group comes from Open Food Facts. For a product our team has added or corrected, the team sets it, and for one you&rsquo;ve just photographed, the app works it out from the ingredients. If we don&rsquo;t know a product&rsquo;s NOVA group, nothing comes off.</p>
     <p>Sugars are left out of the per-ingredient processing points, because they&rsquo;re counted by amount (see <a href="#added-sugar">Added sugar</a>). Added vitamins and minerals are left out too.</p>
 
     <h3 id="rated-ingredients">Rated ingredients</h3>
@@ -149,7 +148,7 @@
         </tbody>
       </table>
     </div>
-    <p>Within High concern, the more serious the concern, the more points come off. And remember the processing points: a rated ingredient that&rsquo;s typical of ultra-processed food costs another 2 there, so even a Low concern additive often takes off more than 2 points in total.</p>
+    <p>Within High concern, the more serious the concern, the more points come off. And remember the processing points: most additives are level 4, which costs another 1.5 there, so a Low concern additive usually takes off 3.5 points in total.</p>
 
     <h3 id="how-a-level-is-chosen">How a level is chosen</h3>
     <p>A level is our reading of the evidence: published studies, and assessments by food-safety authorities such as EFSA in Europe, the FDA in the US and the WHO. New ratings are checked against the original documents and approved by our team before they reach the app, and we&rsquo;re re-checking older ratings the same way. A rating can change when the evidence does, or when we take a fresh look at it.</p>
@@ -184,8 +183,8 @@
         </thead>
         <tbody>
           <tr><td>Start</td><td>Every product starts here.</td><td class="num">100</td></tr>
-          <tr><td>Ingredient processing</td><td>Potatoes (level 1) and salt (level 2) cost nothing. We read plain &ldquo;sunflower oil&rdquo; as refined, as most of it is, and refined sunflower oil is level 3: &minus;0.5. Natural flavors are level 4: &minus;1.5. Both are typical of ultra-processed food: &minus;2 each.</td><td class="num">&minus;6</td></tr>
-          <tr><td>The product as a whole</td><td>Ultra-processed (NOVA 4).</td><td class="num">&minus;10</td></tr>
+          <tr><td>Ingredient processing</td><td>Potatoes (level 1) and salt (level 2) cost nothing. We read plain &ldquo;sunflower oil&rdquo; as refined, as most of it is, and refined sunflower oil is level 3: &minus;0.5. Natural flavors are level 4: &minus;1.5.</td><td class="num">&minus;2</td></tr>
+          <tr><td>The product as a whole</td><td>Ultra-processed (NOVA 4).</td><td class="num">&minus;14</td></tr>
           <tr><td>Rated ingredients</td><td>Refined sunflower oil, Some concern: &minus;5. Natural flavors, Some concern: &minus;5.</td><td class="num">&minus;10</td></tr>
           <tr><td>Added sugar</td><td>None listed.</td><td class="num">0</td></tr>
           <tr><td>Bonus</td><td>None: it has rated ingredients and it&rsquo;s ultra-processed.</td><td class="num">0</td></tr>
