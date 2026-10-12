@@ -123,6 +123,10 @@ img, svg { max-width: 100%; }
 .tester span { color: var(--muted); font-size: 15px; max-width: 24em; }
 a.button { display: inline-flex; align-items: center; text-decoration: none; }
 a.button:hover { color: var(--on-accent); }
+/* The second, lighter button: Android testers write to us, iPhone testers
+   join TestFlight straight away (2026-10-11). */
+.button.button-quiet { background: transparent; color: var(--accent); box-shadow: inset 0 0 0 1.5px var(--accent); }
+a.button-quiet:hover { background: var(--accent); color: var(--on-accent); }
 .hero-mark {
   aspect-ratio: 1;
   max-width: 100%;
