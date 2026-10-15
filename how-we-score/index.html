@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>How Knowsie scores food</title>
-<meta name="description" content="How a Knowsie score is worked out, with the exact points: processing, the four concern levels, added sugar, caps, score ranges, goals, a worked example, and what we don't score.">
+<meta name="description" content="How a Knowsie score is worked out, with the exact points: processing, the four concern levels, added sugar, caps, ceilings for some kinds of food, score ranges, goals, a worked example, and what we don't score.">
 <meta name="theme-color" content="#F7F3EC">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/style.css">
@@ -26,7 +26,7 @@
 
   <main class="doc narrow">
     <h1>How Knowsie scores food</h1>
-    <p class="meta">Last updated 12 October 2026</p>
+    <p class="meta">Last updated 15 October 2026</p>
 
     <p>No mystery numbers here. A score is only useful if you can see where it comes from, so this page lays out how Knowsie scores food, with the exact points. In the app, each product&rsquo;s score breakdown shows what took points off, and you can tap any rated ingredient to see why it&rsquo;s there. The base score is the same for everyone, and brands can&rsquo;t pay for a better one. Ever.</p>
 
@@ -46,7 +46,7 @@
     </nav>
 
     <h2 id="start-at-100">Every product starts at 100</h2>
-    <p>Points come off for processing, for the ingredients we rate and for added sugar. A few kinds of food earn a small bonus. The score never goes below 0 or above 100, and it&rsquo;s rounded to a whole number at the end.</p>
+    <p>Points come off for processing, for the ingredients we rate and for added sugar, and chips lose 25 points for being chips. A few kinds of food earn a small bonus. The score never goes below 0 or above 100, and it&rsquo;s rounded to a whole number at the end.</p>
     <div class="table-scroll" role="region" aria-label="What changes the score" tabindex="0">
       <table>
         <thead>
@@ -65,15 +65,21 @@
           <tr><td>Whole-food bonus</td><td class="num">+5</td><td rowspan="2">+10 for both</td></tr>
           <tr><td>Fermented-food bonus</td><td class="num">+5</td></tr>
         </tbody>
+        <tbody>
+          <tr><th scope="rowgroup" colspan="3">Kinds of food with a ceiling</th></tr>
+          <tr><td>Chips</td><td class="num">&minus;25</td><td>Then a score of 75 at most</td></tr>
+          <tr><td>A sugar, honey or syrup, sold as itself</td><td class="num">None</td><td>A score of 50 at most</td></tr>
+          <tr><td>An alcoholic drink (over 0.5% alcohol)</td><td class="num">None</td><td>A score of 35 at most</td></tr>
+        </tbody>
       </table>
     </div>
-    <p>On top of the points, some ingredients cap the score. More on that <a href="#caps">below</a>.</p>
+    <p>On top of the points, some ingredients cap the score, and these kinds of food have a ceiling. More on <a href="#caps">caps</a> and <a href="#ceilings">ceilings</a> below.</p>
 
     <h3 id="processing">Processing</h3>
     <p>Every ingredient in our database has a processing level from 1 to 4:</p>
     <ul>
       <li><strong>Level 1:</strong> food as it comes, like potatoes, oats, milk or eggs.</li>
-      <li><strong>Level 2:</strong> lightly processed, like salt, flour, olive oil or yogurt.</li>
+      <li><strong>Level 2:</strong> lightly processed, like salt, flour, extra virgin olive oil or yogurt.</li>
       <li><strong>Level 3:</strong> processed, like refined sunflower oil or skimmed milk powder.</li>
       <li><strong>Level 4:</strong> ultra-processed, like flavors, maltodextrin or whey protein isolate.</li>
     </ul>
@@ -82,7 +88,7 @@
     <p>Sugars are left out of the per-ingredient processing points, because they&rsquo;re counted by amount (see <a href="#added-sugar">Added sugar</a>). Added vitamins and minerals are left out too.</p>
 
     <h3 id="rated-ingredients">Rated ingredients</h3>
-    <p>Each ingredient we rate takes off points by its concern level: 2 for Low concern, 5 for Some, 8 for Moderate, and 10 to 15 for High. Together they can take off up to 40 points. Each ingredient counts once per product, however many times the label lists it. When a label lists an oil blend, like &ldquo;sunflower and/or rapeseed oil&rdquo;, we rate it once, by its worst oil. The levels are explained <a href="#concern-levels">below</a>.</p>
+    <p>Each ingredient we rate takes off points by its concern level: 2 for Low concern, 5 for Some, 8 for Moderate, and 10 to 15 for High. Together they can take off up to 40 points. Each ingredient counts once per product, however many times the label lists it, and so does a substance that two ingredients share (see <a href="#what-a-rating-covers">What a rating is about</a>). When a label lists an oil blend, like &ldquo;sunflower and/or palm oil&rdquo;, we count it once, by its worst oil: here palm oil, which is High concern. The levels are explained <a href="#concern-levels">below</a>.</p>
 
     <h3 id="added-sugar">Added sugar</h3>
     <p>Sugar is sugar. Whether the label says sugar, honey, syrup or fruit juice concentrate, we count how much added sugar is in a serving, once per product.</p>
@@ -131,27 +137,57 @@
         </tbody>
       </table>
     </div>
-    <p>If two caps apply, the lower one counts. So a product with one High concern ingredient scores 49 at most, in the Limit range, however good the rest of it is.</p>
+    <p>If two caps apply, the lower one counts, and the same goes for a cap and a ceiling. So a product with one High concern ingredient scores 49 at most, in the Limit range, however good the rest of it is.</p>
+
+    <h3 id="ceilings">Some kinds of food have a ceiling</h3>
+    <p>Some foods are a concern for what they are, whatever else is in them. Three kinds have a ceiling: the highest score they can get. A ceiling works like a cap: on its own it doesn&rsquo;t take points off, it stops the score going higher. Processing, rated ingredients and sugar can still take a product lower, and when a cap is lower than the ceiling, the cap counts.</p>
+    <div class="table-scroll" role="region" aria-label="Ceilings for kinds of food" tabindex="0">
+      <table>
+        <thead>
+          <tr><th scope="col">Kind of food</th><th scope="col">Points</th><th scope="col">Highest possible score</th><th scope="col">The app tells you</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>A sugar, honey or syrup</td><td class="num">None</td><td class="num">50 (Limit)</td><td>Under the score: &ldquo;This is sugar: use it sparingly.&rdquo;</td></tr>
+          <tr><td>Chips</td><td class="num">&minus;25</td><td class="num">75 (Occasional)</td><td>With the score: &ldquo;Chips are a now-and-then snack: high in fat, often salty, and frying or baking forms acrylamide.&rdquo;</td></tr>
+          <tr><td>An alcoholic drink</td><td class="num">None</td><td class="num">35 (Avoid)</td><td>With the score: &ldquo;This is an alcoholic drink. Alcohol is a known cause of cancer, and no amount is risk-free.&rdquo;</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <li><strong>Sugar, honey and syrups:</strong> products that are a sugar, such as white or brown sugar, coconut sugar, honey, maple or agave syrup, molasses, or a syrup you dilute into a drink. Sugar is sugar, whatever the shop calls it. Small additions, like vanilla or a flavoring, don&rsquo;t change that. Food that has sugar in it but isn&rsquo;t a sugar, like jam, sweets, sauces or ready-to-drink drinks, isn&rsquo;t in this group: its sugar is counted by amount (see <a href="#added-sugar">Added sugar</a>). Nor are sugar-free sweeteners, like stevia or erythritol.</li>
+      <li><strong>Chips:</strong> potato chips, including ones made from potato dough, like stacked chips or potato rings; tortilla and corn chips; and vegetable chips, all fried or baked with oil. They lose 25 points, before any cap or ceiling, and then score 75 at most, so no chips reach Low concern. Plainer chips still score higher than heavily flavored ones: plain salted chips (potatoes, sunflower oil and salt, a processed product) score 70, and the flavored chips in our <a href="#worked-example">worked example</a> 54. When chips land in Occasional, the line under the score says &ldquo;A now-and-then snack&rdquo; instead of &ldquo;Fine a few times a week&rdquo;. Fries and oven chips aren&rsquo;t chips here, and for now neither are puffs, straws, popcorn, pretzels or crackers.</li>
+      <li><strong>Alcoholic drinks:</strong> beer, wine, cider, spirits and other drinks with more than 0.5% alcohol by volume score 35 at most, in Avoid, however strong or light they are. When the label gives no figure, a drink sold as beer, wine, cider or spirits counts too. We score these drinks even when there&rsquo;s no ingredient list. Then, if you&rsquo;ve set allergens or a diet, the app tells you it can&rsquo;t check the drink for them. Drinks with 0.5% or less, like alcohol-free beer, have no ceiling, and neither does food made with alcohol, like a rum cake or cooking wine. Both show on the Alcohol watch list, if you&rsquo;ve picked it.</li>
+    </ul>
+    <p>A product gets one ceiling at most, the strictest that applies. Your goals can lower a product under its ceiling, but never lift it above: organic plain chips with &ldquo;Prefer organic&rdquo; (+10) would reach 80, and score 75.</p>
 
     <h2 id="concern-levels">Four concern levels for ingredients</h2>
-    <p>We rate additives, and other ingredients such as some oils and fats, when research points to a possible effect on health at the amounts found in food. Being processed isn&rsquo;t enough on its own: that&rsquo;s what the processing points are for. Each rated ingredient gets one of four levels.</p>
+    <p>We rate additives, and other ingredients such as palm oil, when research points to a possible effect on health at the amounts found in food. Being processed isn&rsquo;t enough on its own: that&rsquo;s what the processing points are for. Each rated ingredient gets one of four levels.</p>
     <div class="table-scroll" role="region" aria-label="Concern levels" tabindex="0">
       <table>
         <thead>
           <tr><th scope="col">Level</th><th scope="col">Points</th><th scope="col">Also</th><th scope="col">For example</th></tr>
         </thead>
         <tbody>
-          <tr><td><span class="tier-dot tier-green" aria-hidden="true"></span>Low concern</td><td class="num">&minus;2</td><td>&mdash;</td><td>Citric acid, guar gum, sunflower lecithin</td></tr>
-          <tr><td><span class="tier-dot tier-yellow" aria-hidden="true"></span>Some concern</td><td class="num">&minus;5</td><td>&mdash;</td><td>Natural flavors, refined sunflower oil, maltodextrin, xanthan gum</td></tr>
-          <tr><td><span class="tier-dot tier-orange" aria-hidden="true"></span>Moderate concern</td><td class="num">&minus;8</td><td>3 or more cap the score</td><td>Aspartame, sucralose, carrageenan, phosphoric acid</td></tr>
-          <tr><td><span class="tier-dot tier-red" aria-hidden="true"></span>High concern</td><td class="num">&minus;10 to &minus;15</td><td>1 caps the score at 49</td><td>Titanium dioxide (E171), potassium bromate, sodium nitrite</td></tr>
+          <tr><td><span class="tier-dot tier-green" aria-hidden="true"></span>Low concern</td><td class="num">&minus;2</td><td>&mdash;</td><td>Citric acid, guar gum, potassium sorbate</td></tr>
+          <tr><td><span class="tier-dot tier-yellow" aria-hidden="true"></span>Some concern</td><td class="num">&minus;5</td><td>&mdash;</td><td>Natural flavors, maltodextrin, xanthan gum, phosphoric acid</td></tr>
+          <tr><td><span class="tier-dot tier-orange" aria-hidden="true"></span>Moderate concern</td><td class="num">&minus;8</td><td>3 or more cap the score</td><td>Aspartame, sucralose, carrageenan, sodium benzoate</td></tr>
+          <tr><td><span class="tier-dot tier-red" aria-hidden="true"></span>High concern</td><td class="num">&minus;10 to &minus;15</td><td>1 caps the score at 49</td><td>Titanium dioxide (E171), potassium bromate, sodium nitrite, palm oil</td></tr>
         </tbody>
       </table>
     </div>
-    <p>Within High concern, the more serious the concern, the more points come off. And remember the processing points: most additives are level 4, which costs another 1.5 there, so a Low concern additive usually takes off 3.5 points in total.</p>
+    <p>Within High concern, the more serious the concern, the more points come off. And remember the processing points: most rated additives are level 3 or 4, which costs another 0.5 or 1.5 there. Natural flavors, for example, are Some concern and level 4, so they take off 6.5 points in total.</p>
+
+    <h3 id="what-a-rating-covers">What a rating is about</h3>
+    <p>A rating is about the evidence on that ingredient itself, from studies in people and in animals. It isn&rsquo;t about how processed the ingredient is, because the processing points already count that, or about how much fat it brings, which your goals can look at. A few rules follow from that:</p>
+    <ul>
+      <li><strong>Oils are rated only for a specific hazard.</strong> Palm oil is High concern because of contaminants that form when it&rsquo;s refined, and partially hydrogenated oils are High concern for their trans fats. Most seed oils, like sunflower, rapeseed (canola), soybean or corn oil, aren&rsquo;t rated. Their processing level still counts.</li>
+      <li><strong>An additive the label doesn&rsquo;t name is rated one level stricter.</strong> Plain &ldquo;thickener&rdquo; could be one of many, so it&rsquo;s Some concern, one level above common named ones like guar gum or pectin (Low concern). Plain &ldquo;flavoring&rdquo; is Some concern too, while a named one like vanillin is Low concern, and an extract that names its source, like garlic extract, isn&rsquo;t rated.</li>
+      <li><strong>One substance counts once.</strong> Guarana is rated for its caffeine, so a drink that lists both caffeine and guarana pays for its caffeine once, by the stricter rating. Both still show in the ingredient list, and each still costs its processing points. In the same way, nitrite counts once: when a meat lists both celery powder and sodium nitrite, the sodium nitrite is the one rated.</li>
+      <li><strong>Celery powder that cures meat counts as nitrite.</strong> Meat sold as &ldquo;uncured&rdquo;, or with &ldquo;no nitrates or nitrites added&rdquo;, is often cured with celery powder or juice instead, and ends up with nitrite all the same. So in a cured meat, celery powder is rated High concern, like sodium nitrite. In a soup or a seasoning it&rsquo;s just celery, and it isn&rsquo;t rated. For now we only read this on English-language labels.</li>
+    </ul>
 
     <h3 id="how-a-level-is-chosen">How a level is chosen</h3>
-    <p>A level is our reading of the evidence: published studies, and assessments by food-safety authorities such as EFSA in Europe, the FDA in the US and the WHO. New ratings are checked against the original documents and approved by our team before they reach the app, and we&rsquo;re re-checking older ratings the same way. A rating can change when the evidence does, or when we take a fresh look at it.</p>
+    <p>A level is our reading of the evidence: published studies, in people and in animals, and assessments by food-safety authorities such as EFSA in Europe, the FDA in the US and the WHO. New ratings are checked against the original documents and approved by our team before they reach the app, and we&rsquo;re re-checking older ratings the same way. A rating can change when the evidence does, or when we take a fresh look at it.</p>
     <p>A level isn&rsquo;t a legal status. An ingredient can be allowed in food and still be rated Some or Moderate concern, because we look at the research, not just at what&rsquo;s permitted.</p>
     <p>In the app, tap any rated ingredient to read &ldquo;Why this rating&rdquo; in plain words. Tap &ldquo;Show the research&rdquo; for the longer story and, for nearly all ingredients, the sources we used.</p>
 
@@ -170,12 +206,12 @@
         </tbody>
       </table>
     </div>
-    <p>That line gets personal when it needs to. If a product lists one of your allergens, or we know it doesn&rsquo;t fit your diet, it says &ldquo;Not for you &mdash; see below&rdquo; instead. If it may contain one of your allergens, it says &ldquo;May contain your allergens &mdash; see below&rdquo;. On a Low concern or Occasional product, it names anything on your watch list instead. And a Low concern product with a Moderate concern ingredient says &ldquo;Good overall &mdash; 1 ingredient worth a look&rdquo;.</p>
+    <p>That line gets personal when it needs to. If a product lists one of your allergens, including ones you type in, or we know it doesn&rsquo;t fit your diet, it turns red and says &ldquo;Not for you &mdash; see below&rdquo; instead. If it may contain one of your allergens, it says &ldquo;May contain your allergens &mdash; see below&rdquo;. For a drink we score without an ingredient list, it asks you to check the label for your allergens or diet. A sugar, honey or syrup says &ldquo;This is sugar: use it sparingly.&rdquo; whatever its score, and chips in Occasional say &ldquo;A now-and-then snack&rdquo;. On a Low concern or Occasional product, it says &ldquo;Check the label for your diet &mdash; see below&rdquo; when we can&rsquo;t confirm the product fits your diet, and otherwise names anything on your watch list. And a Low concern product with a Moderate concern ingredient says &ldquo;Good overall &mdash; 1 ingredient worth a look&rdquo;.</p>
     <p>A high score means we found little to take points off. It doesn&rsquo;t mean a product suits everyone. And an ingredient that isn&rsquo;t in our database yet can&rsquo;t take points off either, so the app tells you when it couldn&rsquo;t recognize everything.</p>
 
     <h2 id="worked-example">A worked example</h2>
-    <p>Here&rsquo;s a bag of flavored potato chips we made up for this page. It isn&rsquo;t a real product, but its ingredients, their levels and their ratings are real ones from our database as of 11 October 2026.</p>
-    <p class="callout"><strong>Ingredients:</strong> potatoes, sunflower oil, natural flavors, salt. Because it contains flavors, it&rsquo;s in NOVA group 4 (ultra-processed).</p>
+    <p>Here&rsquo;s a bag of flavored potato chips we made up for this page. It isn&rsquo;t a real product, but its ingredients, their levels and their ratings are real ones from our database as of 14 October 2026, and the score is the one the app works out for it.</p>
+    <p class="callout"><strong>Ingredients:</strong> potatoes, sunflower oil, natural flavors, salt. Because it contains flavors, it&rsquo;s in NOVA group 4 (ultra-processed). And it&rsquo;s chips, so the chips rule applies.</p>
     <div class="table-scroll" role="region" aria-label="Worked example" tabindex="0">
       <table class="fit">
         <thead>
@@ -185,21 +221,24 @@
           <tr><td>Start</td><td>Every product starts here.</td><td class="num">100</td></tr>
           <tr><td>Ingredient processing</td><td>Potatoes (level 1) and salt (level 2) cost nothing. We read plain &ldquo;sunflower oil&rdquo; as refined, as most of it is, and refined sunflower oil is level 3: &minus;0.5. Natural flavors are level 4: &minus;1.5.</td><td class="num">&minus;2</td></tr>
           <tr><td>The product as a whole</td><td>Ultra-processed (NOVA 4).</td><td class="num">&minus;14</td></tr>
-          <tr><td>Rated ingredients</td><td>Refined sunflower oil, Some concern: &minus;5. Natural flavors, Some concern: &minus;5.</td><td class="num">&minus;10</td></tr>
+          <tr><td>Rated ingredients</td><td>Natural flavors, Some concern: &minus;5. Sunflower oil isn&rsquo;t rated (see <a href="#what-a-rating-covers">What a rating is about</a>).</td><td class="num">&minus;5</td></tr>
           <tr><td>Added sugar</td><td>None listed.</td><td class="num">0</td></tr>
-          <tr><td>Bonus</td><td>None: it has rated ingredients and it&rsquo;s ultra-processed.</td><td class="num">0</td></tr>
-          <tr class="total"><td>Score</td><td>Occasional: &ldquo;Fine a few times a week&rdquo;</td><td class="num">74</td></tr>
+          <tr><td>Bonus</td><td>None: it has a rated ingredient and it&rsquo;s ultra-processed.</td><td class="num">0</td></tr>
+          <tr><td>Chips</td><td>Chips lose 25 points for being chips.</td><td class="num">&minus;25</td></tr>
+          <tr><td>Chips ceiling</td><td>Chips score 75 at most. These chips come to 54, under the ceiling, so it changes nothing.</td><td class="num">0</td></tr>
+          <tr class="total"><td>Score</td><td>Limit: &ldquo;Once a week or less&rdquo;</td><td class="num">54</td></tr>
         </tbody>
       </table>
     </div>
-    <p><strong>Now add one High concern ingredient.</strong> Say the recipe also used titanium dioxide (E171), a white colour rated High concern. The points add up to about 60, but one High concern ingredient caps the score at 49. This version lands in Limit.</p>
-    <p><strong>Now add a goal.</strong> Say you&rsquo;ve picked &ldquo;Lower sodium&rdquo;, and the bag has 600 mg of sodium per 100 g (that&rsquo;s 1.5 g of salt). That&rsquo;s well past the 120 mg &ldquo;low&rdquo; level, so your score drops by 8, to 66. Someone without that goal still sees 74.</p>
+    <p>With the score, the app also shows the chips note: &ldquo;Chips are a now-and-then snack: high in fat, often salty, and frying or baking forms acrylamide.&rdquo; In the score breakdown, the 25 points have a row of their own, &ldquo;Chips&rdquo;.</p>
+    <p><strong>Now add one High concern ingredient.</strong> Say the recipe also used titanium dioxide (E171), a white colour rated High concern. It takes off about 10.5 points as a rated ingredient and another 1.5 for processing (it&rsquo;s level 4), so the points come to 42. One High concern ingredient caps the score at 49, but these chips are already under that, so the cap changes nothing: this version scores 42, still in Limit. A cap, like a ceiling, only stops a score going higher.</p>
+    <p><strong>Now add a goal.</strong> Say you&rsquo;ve picked &ldquo;Lower sodium&rdquo;, and the bag has 600 mg of sodium per 100 g (that&rsquo;s 1.5 g of salt). That&rsquo;s well past the 120 mg &ldquo;low&rdquo; level, so your score drops by 8, to 46. Someone without that goal still sees 54.</p>
 
     <h2 id="personal">What&rsquo;s personal, and what isn&rsquo;t</h2>
     <p>Your food, your rules, but the base score is the same for everyone. Your settings work in two ways.</p>
 
     <h3 id="goals">Your goals can move your score</h3>
-    <p>Pick up to 5 of 9 goals. Together they can move your score by up to 15 points, up or down. They can lower a capped product, but they never lift it above its cap. On each product&rsquo;s last page, the score breakdown shows &ldquo;Score before your goals&rdquo;, what each goal changed and why, and then &ldquo;Your score&rdquo;.</p>
+    <p>Pick up to 5 of 9 goals. Together they can move your score by up to 15 points, up or down. They can lower a product with a cap or a ceiling, but they never lift it above that. On each product&rsquo;s last page, the score breakdown shows &ldquo;Score before your goals&rdquo;, what each goal changed and why, and then &ldquo;Your score&rdquo;.</p>
     <p>A &ldquo;lower&rdquo; goal does nothing until a product goes past the &ldquo;low&rdquo; level, then takes off more the further past it goes, up to 13 points. A &ldquo;higher&rdquo; goal does nothing until a product is a &ldquo;source of&rdquo; that nutrient, and adds up to 5 points when it&rsquo;s &ldquo;high in&rdquo; it. The &ldquo;low&rdquo;, &ldquo;source of&rdquo; and &ldquo;high in&rdquo; levels come mostly from the EU&rsquo;s rules for nutrition claims and the UK&rsquo;s front-of-pack labels. Where there&rsquo;s no official level, as for carbs or for where a &ldquo;lower&rdquo; goal has its full effect, we set our own.</p>
     <div class="table-scroll" role="region" aria-label="Goals" tabindex="0">
       <table>
@@ -224,20 +263,20 @@
     <h3 id="warnings">Warnings never change the score</h3>
     <p>These show up as separate alerts by the score, and the number stays the same:</p>
     <ul>
-      <li><strong>Allergens:</strong> gluten, dairy, eggs, tree nuts, peanuts, soy, fish, shellfish and sesame. For these, the app checks the ingredients, the label&rsquo;s &ldquo;Contains&rdquo; line and Open Food Facts&rsquo; allergen data. You can also type in your own, and the app looks for them by name in the ingredient list.</li>
-      <li><strong>&ldquo;May contain&rdquo;:</strong> shown for the allergens you pick from the list (not ones you type in), in a softer box than a &ldquo;contains&rdquo;.</li>
-      <li><strong>Diets:</strong> vegan, vegetarian, halal and kosher. We warn only when we know a product doesn&rsquo;t fit, so no warning doesn&rsquo;t mean it does.</li>
-      <li><strong>Your watch list:</strong> 10 groups, such as artificial sweeteners, synthetic food dyes or seed oils. Heavy metals are flagged for ingredients that can carry them; that isn&rsquo;t a lab test of the product.</li>
+      <li><strong>Allergens:</strong> gluten, dairy, eggs, tree nuts, peanuts, soy, fish, shellfish and sesame. For these, the app checks the ingredients, the label&rsquo;s &ldquo;Contains&rdquo; line and Open Food Facts&rsquo; allergen data. You can also type in your own, and the app looks for them by name in the ingredient list and the label&rsquo;s &ldquo;Contains&rdquo; line.</li>
+      <li><strong>&ldquo;May contain&rdquo;:</strong> shown for your allergens, ones you type in too, in a softer box than a &ldquo;contains&rdquo;.</li>
+      <li><strong>Diets:</strong> vegan, vegetarian, halal and kosher. When we know a product doesn&rsquo;t fit, the app says &ldquo;Not for you&rdquo;. For halal that includes alcohol: an alcoholic drink, or alcohol the ingredient list names, like rum in a rum cake or alcohol listed in a vanilla extract. We go by what the list says, so a plain &ldquo;vanilla extract&rdquo; or &ldquo;rum flavoring&rdquo;, which can be made with alcohol, isn&rsquo;t flagged, and neither is a vinegar. Some ingredients rarely say enough to tell, so for these the app shows a softer, yellow notice instead, such as &ldquo;Can&rsquo;t confirm it&rsquo;s vegetarian&rdquo;: cheese and rennet, which may come from an animal; and, for halal and kosher, gelatin and collagen whose animal isn&rsquo;t named, and meat, since no ingredient list says how the animal was slaughtered. For halal and kosher it adds &ldquo;Look for a certification.&rdquo;, and a product that carries that diet&rsquo;s certification gets no notice. Beyond these, no warning doesn&rsquo;t mean a product fits.</li>
+      <li><strong>Your watch list:</strong> 11 groups, such as artificial sweeteners, synthetic food dyes, seed oils or alcohol. Heavy metals are flagged for ingredients that can carry them; that isn&rsquo;t a lab test of the product. Alcohol covers alcoholic drinks, their alcohol-free versions and food made with alcohol.</li>
     </ul>
 
     <h2 id="not-scored">What we don&rsquo;t score or rate, and why</h2>
     <ul>
       <li><strong>Supplements aren&rsquo;t scored.</strong> A supplement is taken in small doses for a specific purpose, so a food score wouldn&rsquo;t be fair to it. You can still check its ingredients and allergen warnings. Protein powders, protein bars and meal replacements are eaten as food, so they are scored.</li>
-      <li><strong>No ingredient list, no score.</strong> If a product&rsquo;s ingredients are missing, the app asks you to photograph them.</li>
-      <li><strong>Plain foods aren&rsquo;t rated.</strong> Milk, oats, flour, eggs and most everyday ingredients don&rsquo;t get a concern level, and neither do protein isolates, yeast extracts, plain starches, most fibers or most plant extracts. (Modified starches are additives, and we rate them.) A rating needs a reason in the research, and being processed isn&rsquo;t one on its own. Their processing level still counts, though.</li>
+      <li><strong>No ingredient list, no score,</strong> except for alcoholic drinks (see <a href="#ceilings">ceilings</a>). If a product&rsquo;s ingredients are missing, the app asks you to photograph them.</li>
+      <li><strong>Plain foods aren&rsquo;t rated.</strong> Milk, oats, flour, eggs and most everyday ingredients don&rsquo;t get a concern level, and neither do most oils, protein isolates, yeast extracts, starches (nearly all modified starches too), most fibers or most plant extracts. A rating needs a reason in the research, and being processed isn&rsquo;t one on its own. Their processing level still counts, though.</li>
       <li><strong>Added vitamins and minerals aren&rsquo;t rated or counted.</strong> They don&rsquo;t change the score at all. The app lists them together under &ldquo;Good to know&rdquo;.</li>
       <li><strong>Sugars aren&rsquo;t rated.</strong> They&rsquo;re counted by amount instead (see <a href="#added-sugar">Added sugar</a>), so what matters is how much is in a serving, not what the label calls it.</li>
-      <li><strong>The amount of alcohol isn&rsquo;t scored.</strong> Beer, wine and other alcoholic drinks are scored like any other drink, by their ingredients. When a label lists alcohol as an ingredient, as vanilla extract often does, it&rsquo;s rated Low concern, like any other rated ingredient.</li>
+      <li><strong>The strength of a drink isn&rsquo;t scored.</strong> Any drink with more than 0.5% alcohol scores 35 at most, a light beer the same as a spirit. Under that ceiling, its ingredients count as they would in any other drink. When a food&rsquo;s label lists alcohol as an ingredient, as vanilla extract often does, it&rsquo;s rated Low concern, like any other rated ingredient.</li>
     </ul>
 
     <h2 id="data">Where the data comes from, and its limits</h2>
