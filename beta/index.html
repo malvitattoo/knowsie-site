@@ -252,9 +252,12 @@
   }
   .way { display: grid; gap: 10px; padding: 20px 18px; }
   @media (min-width: 600px) { .way { padding: 22px 26px; } }
-  .ways li + li { border-top: 1px solid var(--border); }
+  .ways > li + li { border-top: 1px solid var(--border); }
   .way-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
   .way p { color: var(--muted); }
+  .mini-steps { margin: 0; padding-left: 1.4em; display: grid; gap: 6px; color: var(--muted); }
+  .mini-steps li::marker { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .way .or { font-size: 15.5px; }
   .helps { margin-top: 16px; color: var(--muted); font-size: 15.5px; max-width: 60ch; }
 
   footer {
@@ -277,7 +280,7 @@
   </header>
 
   <section class="hero" aria-labelledby="welcome">
-    <p class="eyebrow">Tester guide · updated 14 Oct 2026</p>
+    <p class="eyebrow">Tester guide · updated 15 Oct 2026</p>
     <h1 id="welcome">Thanks for testing <em>Knowsie</em></h1>
     <p class="lede">Knowsie scans packaged food and shows how it fits your allergies, diet and goals, with the research behind every rated ingredient. It’s the new name for the app you may know as Malvi.</p>
     <nav class="jump" aria-label="On this page">
@@ -489,7 +492,7 @@
     <p class="intro">We’re on these, so no need to report them.</p>
     <div class="known">
       <ul>
-        <li><span>Google’s sign-in page shows an address ending in <strong>supabase.co</strong> instead of Knowsie. That’s our sign-in service, and we’re changing what it shows.</span></li>
+        <li><span>When you continue with Google on iPhone, a box asks if Knowsie may use an address ending in <strong>supabase.co</strong>. That’s our sign-in service. A coming version will show google.com there instead.</span></li>
         <li><span>Scores can change slightly as we improve the ingredient database.</span></li>
         <li><span>There’s no offline mode yet. Scanning needs an internet connection.</span></li>
         <li><span>Reading label photos has a daily limit. If the app says “try again later”, that’s the limit.</span></li>
@@ -508,13 +511,19 @@
         <p>Go to <span class="ui">Profile</span>, then <span class="ui">Send feedback</span>.</p>
       </li>
       <li class="way">
-        <div class="way-head"><h3>Screenshot on iPhone</h3></div>
-        <p>Take a screenshot in Knowsie and tap the preview. Tap <span class="ui">Done</span> or the Share button, then choose <span class="ui">Share Beta Feedback</span>. TestFlight sends it to us with your note.</p>
+        <div class="way-head"><h3>Screenshot on iPhone</h3><span class="tag">Best for “this looks wrong”</span></div>
+        <ol class="mini-steps">
+          <li>In Knowsie, take a screenshot (side button + volume up).</li>
+          <li>Tap the small preview in the lower-left corner. Draw on it if you like, then tap <span class="ui">Done</span>.</li>
+          <li>Choose <span class="ui">Share Beta Feedback</span>.</li>
+          <li>Write what you expected to see. If you’d like a reply, add your email, because we can’t see it otherwise.</li>
+          <li>Tap <span class="ui">Submit</span>.</li>
+        </ol>
+        <p class="or">No screenshot? Open <strong>TestFlight</strong>, tap <strong>Knowsie</strong>, then <span class="ui">Send Beta Feedback</span> and <span class="ui">Don’t Include Screenshot</span>.</p>
       </li>
       <li class="way">
-        <div class="way-head"><h3>Feedback form</h3></div>
-        <p>A short form. Send it as many times as you like.</p>
-        <a class="btn btn-quiet" href="https://docs.google.com/forms/d/e/1FAIpQLSd0dtWfg2XHPNxDINY146GsQPrKeABMs4G9j4FNIDFgKYjxDg/viewform?usp=publish-editor" target="_blank" rel="noopener">Open the feedback form</a>
+        <div class="way-head"><h3>Google Play on Android</h3></div>
+        <p>Open Knowsie’s page in the Play Store app. As a tester you’ll see a private feedback box there. Only our team can read what you write.</p>
       </li>
       <li class="way">
         <div class="way-head"><h3>Email</h3></div>
