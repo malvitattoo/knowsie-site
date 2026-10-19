@@ -26,7 +26,8 @@
 
   <main class="doc narrow">
     <h1>Privacy policy</h1>
-    <p class="meta">Last updated 9 October 2026</p>
+    <p class="meta">Last updated 19 October 2026</p>
+    <p><strong>What changed on 19 October 2026:</strong> We added <a href="#recipe-changes">recipe changes</a> and favourites: what they store, where and for how long, and what signing out or deleting your account removes (see <a href="#how-long-we-keep-it">How long we keep it</a>). We described how notifications about recipe changes will work once we add them; they aren&rsquo;t available yet. We also corrected <a href="#what-we-collect">scan history</a>: opening a product from Search or from your favourites adds it to your history, and so does a product you send in while signed in.</p>
 
     <p>This policy describes the Knowsie app for iPhone and Android, version 1.2.0, including the updates we deliver inside the app. Until a new version of the app renames it, your phone may still show its earlier name, Malvi.</p>
     <p>Knowsie (&ldquo;we&rdquo;) is an app that scans packaged food, reads the ingredients and rates them. This policy explains what we collect, why, who processes it, and the choices you have. We don&rsquo;t show ads, we don&rsquo;t track you across other companies&rsquo; apps or websites, and we don&rsquo;t sell your data.</p>
@@ -36,6 +37,7 @@
       <p><strong>On this page</strong></p>
       <ul>
         <li><a href="#what-we-collect">What we collect</a></li>
+        <li><a href="#recipe-changes">Recipe changes and notifications</a></li>
         <li><a href="#how-we-use-it">How we use it</a></li>
         <li><a href="#who-processes-it">Who processes it</a></li>
         <li><a href="#health-information">Health information</a></li>
@@ -81,8 +83,18 @@
           </tr>
           <tr>
             <td>Scan history: barcode, product name, score and time</td>
-            <td>You scan a barcode while signed in and the app finds and scores the product. Opening a product from History updates its entry. Opening one from Search doesn&rsquo;t add anything.</td>
+            <td>You scan a barcode, or open a product from Search or from your favourites, while signed in, and the app finds and scores it. A product you send in while signed in is added too, even before it has a score. Opening a product from History updates its entry. Opening one from Recipe changes or from the alternatives we suggest doesn&rsquo;t add anything.</td>
             <td>Your account. One entry per product, with the latest time. The saved score includes the effect of your goals.</td>
+          </tr>
+          <tr>
+            <td>Favourites: the products you mark with the heart (barcode, product name, brand, the score and rating the app last showed you, and when you added it)</td>
+            <td>You tap the heart on a product while signed in</td>
+            <td>Your account, so they&rsquo;re on all your phones and can be checked for recipe changes. Up to 200. As in scan history, the saved score includes the effect of your goals. Kept until you tap the heart again to remove it, or delete your account.</td>
+          </tr>
+          <tr>
+            <td>Recipe changes: which changes we found to products in your History or favourites, and when you saw each one in the app</td>
+            <td>You have an account, and a product in your History or favourites changes its ingredients or allergen information on Open Food Facts</td>
+            <td>Your account. See <a href="#recipe-changes">&ldquo;Recipe changes and notifications&rdquo;</a> below.</td>
           </tr>
           <tr>
             <td>A product you send in: photos (front, ingredients, nutrition label and any extras), its barcode, and the name, brand, ingredients, nutrition values, serving size and organic seal</td>
@@ -107,7 +119,7 @@
           <tr>
             <td>Barcodes you scan and words you search for</td>
             <td>You scan or search</td>
-            <td>Sent to Open Food Facts and to our database to find the product. They aren&rsquo;t saved to your account, except as scan history (above).</td>
+            <td>Sent to Open Food Facts and to our database to find the product. They aren&rsquo;t saved to your account, except as scan history or favourites (above).</td>
           </tr>
           <tr>
             <td>Names of ingredients we don&rsquo;t recognize yet, with the product&rsquo;s barcode</td>
@@ -132,11 +144,24 @@
         </tbody>
       </table>
     </div>
-    <p>The app never asks for your location, and we don&rsquo;t collect your contacts or read your photo library. Our server&rsquo;s request logs do note the approximate area each connection comes from (such as the city), worked out from its IP address. We don&rsquo;t use it, and those logs are deleted after 1 day on our current plan. The camera is used only to read barcodes (that happens on your phone) and to take the product photos you choose to send. Please keep people and personal details out of those photos. The app doesn&rsquo;t send push notifications and doesn&rsquo;t ask to.</p>
+    <p>The app never asks for your location, and we don&rsquo;t collect your contacts or read your photo library. Our server&rsquo;s request logs do note the approximate area each connection comes from (such as the city), worked out from its IP address. We don&rsquo;t use it, and those logs are deleted after 1 day on our current plan. The camera is used only to read barcodes (that happens on your phone) and to take the product photos you choose to send. Please keep people and personal details out of those photos.</p>
+
+    <h3 id="recipe-changes">Recipe changes and notifications</h3>
+    <p><strong>Recipe changes.</strong> Recipe changes and favourites need an account. For the products in your History that you&rsquo;ve scanned or opened in the last 6 months, and for your favourites (up to 200 products per account, favourites first), our server checks Open Food Facts again, usually once a day. It sends only the barcodes, never anything about you or about who has the product. When a product&rsquo;s ingredients or allergen information change, we record that the change is for your account, and when you saw it in the app. These records are deleted 6 months after we find the change, within a day once the product is in neither your History nor your favourites, or with your account. What a change means for you, given your allergies, typed allergens, diets, goals and watch list, is worked out on your phone; our servers don&rsquo;t use your preferences for this. Your phone keeps the recipe changes listed for you, and what each one means for you, until you sign out.</p>
+    <p>To spot changes, our server keeps the latest Open Food Facts version of each product it checks, and the changes it finds. That&rsquo;s product information, with nothing about who has the product. A product&rsquo;s version is deleted once we stop checking it (and at least 7 days after we first saved it), and the changes 6 months after we find them.</p>
+    <p><strong>Notifications (not available yet).</strong> The app doesn&rsquo;t offer push notifications yet, so for now you&rsquo;ll find recipe changes only in the app. When we add them, they&rsquo;ll work like this, and we&rsquo;ll update this policy first if anything changes:</p>
+    <ul>
+      <li>Knowsie will send them only if you turn them on in the app and allow them when your phone asks. You&rsquo;ll be able to turn them off at any time in Profile &rarr; Preferences or in your phone&rsquo;s settings.</li>
+      <li>Their text will always be one of two short messages: &ldquo;A product from your history or favourites changed its recipe.&rdquo; or, for two or more products, &ldquo;Some products from your history or favourites changed their recipes.&rdquo; They&rsquo;ll never name a product, ingredient, allergen, diet or score, and you&rsquo;ll get at most one a day.</li>
+      <li>While they&rsquo;re on, we&rsquo;ll store your phone&rsquo;s push token (an Expo push token), its platform, the app version and when the app last ran on it while you were signed in, linked to your account, and we&rsquo;ll note which recipe changes a notification told you about. We&rsquo;ll delete the token when you turn notifications off in the app (if you do it in your phone&rsquo;s settings, the next time the app starts while you&rsquo;re signed in), sign out on that phone or delete your account, when Expo tells us it no longer works (for example, after you delete the app), or 180 days after the app last ran there while you were signed in. If you turn them off or sign out while you&rsquo;re offline, the app tells us the next time it starts with an account signed in. For each notification we send, we&rsquo;ll keep Expo&rsquo;s ticket number with the token until we get Expo&rsquo;s receipt for it, for at most 2 days.</li>
+      <li>To create the token, the app will send Expo the push address Apple gives your phone, a random ID for this installation and the app&rsquo;s ID. Notifications will go through Expo and Apple Push Notification service. They&rsquo;ll start on iPhone; Android isn&rsquo;t supported yet.</li>
+      <li>If you sign out, that phone stops getting notifications. Your choice is remembered on the phone and applies again if you sign back in with the same account.</li>
+    </ul>
 
     <h3>What stays on your phone</h3>
     <ul>
-      <li>Your preferences, and how far you&rsquo;ve got in the app tour.</li>
+      <li>Your preferences, how far you&rsquo;ve got in the app tour, and which one-time notices in the app you&rsquo;ve already seen.</li>
+      <li>If you&rsquo;re signed in: a copy of your favourites (with any changes to them not yet sent), and the recipe changes listed for you, with the product versions they compare and what each change means for you. They&rsquo;re removed when you sign out.</li>
       <li>Your sign-in, so you stay signed in until you sign out. It includes your email address, your account&rsquo;s random ID and, with Google sign-in, your name and profile picture link.</li>
       <li>Your light or dark mode choice.</li>
       <li>A count of your first 5 scored scans. On iPhone, it&rsquo;s used once, to ask Apple to show its rating window (only if you installed Knowsie from the App Store). Apple handles any rating you give, and nothing about it is sent to us. On Android, the app doesn&rsquo;t ask for ratings.</li>
@@ -147,7 +172,8 @@
     <h2 id="how-we-use-it">How we use it</h2>
     <ul>
       <li>To score products. The base score is the same for everyone. If you choose nutrition goals, they can move your score up or down by up to 15 points. Your allergies, typed allergens and diets add warnings, and the alternatives we suggest leave out products whose information conflicts with them. Your watch list adds alerts. None of these four change the score.</li>
-      <li>To keep your preferences and scan history in your account when you&rsquo;re signed in, so they&rsquo;re there on your other devices.</li>
+      <li>To keep your preferences, scan history and favourites in your account when you&rsquo;re signed in, so they&rsquo;re there on your other devices.</li>
+      <li>To check the products in your History and your favourites for recipe changes, and show you in the app what changed and what it means for you.</li>
       <li>To read the label photos you take and fill in the product&rsquo;s details for you to check.</li>
       <li>To review products and reports you send in, and add them, or the corrections, to our product database, where every user can see them. A front photo you send, or a photo from a problem report, may become the product&rsquo;s picture.</li>
       <li>To read your feedback and your emails, and answer them.</li>
@@ -178,7 +204,7 @@
           <tr>
             <td>Open Food Facts</td>
             <td>The public, collaborative product database the app looks products up in. It&rsquo;s based in France.</td>
-            <td>The barcodes you scan and the words you search for. When we look for alternatives: a product&rsquo;s category and country, or words from its name and brand if it has no category. Like any website, it also sees your IP address, including when product pictures load from its servers. We never send it your account, preferences or photos.</td>
+            <td>The barcodes you scan and the words you search for. When we look for alternatives: a product&rsquo;s category and country, or words from its name and brand if it has no category. Like any website, it also sees your IP address, including when product pictures load from its servers. To check for recipe changes, our server also sends it the barcodes of products in our users&rsquo; History and favourites, with nothing about who has them. We never send it your account, preferences or photos.</td>
           </tr>
           <tr>
             <td>Sentry</td>
@@ -213,12 +239,14 @@
     <p>Our website, knowsie.app, is hosted by GitHub Pages. GitHub logs visitors&rsquo; IP addresses for security. The website serves its own fonts, and it uses no cookies and no analytics. Its password reset page, which opens from the link in a reset email, loads Supabase&rsquo;s sign-in code from jsDelivr, a public service that delivers code to websites, so jsDelivr sees your IP address when you open that page. The new password you type there goes straight to Supabase, our sign-in provider, over an encrypted connection.</p>
 
     <h2 id="health-information">Health information</h2>
-    <p>Allergies, typed allergens and nutrition goals can count as health information. Halal and kosher diets can reveal religious beliefs, and vegan or vegetarian diets can reveal other beliefs. We use them only to personalize the app: your warnings, the effect of your goals on your scores, and the alternatives we suggest. We never use them for advertising, and we never sell them.</p>
+    <p>Allergies, typed allergens and nutrition goals can count as health information. Halal and kosher diets can reveal religious beliefs, and vegan or vegetarian diets can reveal other beliefs. We use them only to personalize the app: your warnings, the effect of your goals on your scores, the alternatives we suggest, and what a recipe change means for you (worked out on your phone). We never use them for advertising, and we never sell them.</p>
     <p>They&rsquo;re optional. You can choose them when you first open the app or later. You can leave them empty, change them or clear them at any time in Profile &rarr; Preferences. If you&rsquo;re not signed in, they stay on your phone. If you&rsquo;re signed in, they&rsquo;re also saved in your account.</p>
 
     <h2 id="how-long-we-keep-it">How long we keep it</h2>
     <ul>
-      <li>Account, preferences and scan history: until you delete your account. Deleting it in the app removes all three from our servers right away. If you ask us by email instead, we delete them within 7 days. Our current database plan doesn&rsquo;t include backups, so we don&rsquo;t keep a backup copy.</li>
+      <li>Account, preferences, scan history and favourites: until you delete your account (a favourite also goes when you remove its heart). Deleting your account in the app removes them from our servers right away, together with your recipe change records. If you ask us by email instead, we delete them within 7 days. Our current database plan doesn&rsquo;t include backups, so we don&rsquo;t keep a backup copy.</li>
+      <li>Recipe change records: 6 months after we find the change, within a day once the product is in neither your History nor your favourites, or with your account.</li>
+      <li>Favourites and recipe changes on your phone: until you sign out or delete your account in the app. If your sign-in ends some other way, for example because you deleted your account on another phone, they stay on that phone until you delete the app there, or sign in there again with the same account and then sign out.</li>
       <li>Sign-in records (IP address and device type): until you sign out on that device or delete your account. Deleting the app without signing out doesn&rsquo;t end them.</li>
       <li>Preferences on your phone: if you&rsquo;re not signed in, until you clear them or delete the app. If you&rsquo;re signed in, until you sign out or delete your account in the app. If your sign-in ends some other way, for example because you deleted your account on another phone, they stay on that phone until you sign out there or delete the app.</li>
       <li>Products and problem reports you send in, with their photos: kept while we review them. Approved ones become part of our product database and stay there. Ones we reject are deleted, with their photos, 90 days after we reject them.</li>
@@ -236,7 +264,8 @@
     <ul>
       <li>Use Knowsie without an account. Your preferences then stay on your phone. The barcodes, searches, photos, reports and feedback you send still leave your phone, as described above.</li>
       <li>Change or clear your preferences at any time in Profile &rarr; Preferences. Clearing them, or deleting your account, withdraws your consent to us keeping them.</li>
-      <li>Sign out in Profile. That also clears your preferences from that phone.</li>
+      <li>Sign out in Profile. That also clears your preferences, favourites and recipe changes from that phone.</li>
+      <li>Remove a favourite at any time by tapping its heart again.</li>
       <li>Delete your account in Profile &rarr; Account settings &rarr; Delete account. It takes effect right away. Products, reports and feedback you sent stay (until the times listed above), but the link to your account is removed. A few things don&rsquo;t go away on their own yet. Write to <a href="mailto:privacy@knowsie.app">privacy@knowsie.app</a> and we&rsquo;ll remove them:
         <ul>
           <li>Our photo storage still notes which account uploaded each photo.</li>
@@ -244,7 +273,7 @@
         </ul>
       </li>
       <li>No longer have the app? Email <a href="mailto:privacy@knowsie.app">privacy@knowsie.app</a> from your account&rsquo;s email address, and we&rsquo;ll delete your account within 7 days. See <a href="/delete-account/">Delete your Knowsie account</a> for the steps, and what we delete and what stays.</li>
-      <li>Copies of your preferences on your other phones stay until you sign out there or delete the app.</li>
+      <li>Copies of your preferences, favourites and recipe changes on your other phones stay until you sign out there (while that phone is still signed in) or delete the app.</li>
       <li>If you signed in with Apple, the app can also ask Apple to end Knowsie&rsquo;s access when you delete your account. Check that it&rsquo;s gone: on your iPhone, open Settings, tap your name, then tap Sign in with Apple (on some versions of iOS, it&rsquo;s under Sign-In &amp; Security). If Knowsie, or Malvi, its earlier name, is still listed, choose it and tap Delete. You can also check at <a href="https://account.apple.com">account.apple.com</a>, under Sign-In &amp; Security &rarr; Sign in with Apple.</li>
       <li>There&rsquo;s no way yet to delete single scan history entries in the app. Write to us and we&rsquo;ll do it.</li>
       <li>Ask us to see, correct, export or delete your data, or object to how we use it, by writing to <a href="mailto:privacy@knowsie.app">privacy@knowsie.app</a>. Depending on where you live (for example the EU, the UK or California), these may be legal rights. We&rsquo;ll answer within 30 days. In the EU and the UK, you can also complain to your data protection authority (in Poland, that&rsquo;s the UODO).</li>
